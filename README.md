@@ -1,7 +1,7 @@
-# league-statistical-analysis
----
-layout: default
-title: "League of Legends Analytics: Objective Control and Win Rate Insights"
+<div align="center">
+    <h1>League of Legends Analytics on Professional Teams</h1>
+    <p>Objective Control and Win Rate Insights</p>
+</div>
 ---
 
 # League of Legends Analytics: Objective Control and Win Rate Insights
