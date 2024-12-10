@@ -193,7 +193,7 @@
     <p>The following plot shows the distribution of dragons secured in professional League of Legends matches:</p>
 </div>
 <iframe 
-        src="/league-statistical-analysis/assets/dragons_plot.html" 
+        src="assets/dragons_plot.html" 
         width="800" 
         height="600" 
         frameborder="0" 
