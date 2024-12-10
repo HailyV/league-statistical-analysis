@@ -219,3 +219,16 @@
     Most leagues averaged about 2.2 dragons this season (2022). However, the highest average is in the 
     LCK, which could be telling of their strategy for prioritizing dragons compared to other teams.
 </p>
+
+<iframe 
+    src="assets/vspm_v_kills.html" 
+    width="800" 
+    height="600" 
+    frameborder="0" 
+    style="border: none; margin-top: 20px; margin-bottom: 20px;">
+</iframe>
+
+<p>
+    Teams with a higher VSPM tend to be more active in creating map pressure and securing kills. This correlation 
+    is seen in the plot showing the importance of vision control in facilitating aggressive plays and securing objectives.
+</p>
