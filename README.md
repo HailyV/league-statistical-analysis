@@ -53,9 +53,11 @@
     The dataset contains approximately <strong>150,000 rows</strong> of data. For this analysis, we will focus on the following columns:
 </p>
 <ul>
-    <li><strong>dragons</strong>: The number of dragons secured.</li>
-    <li><strong>league</strong>: The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).</li>
-    <li><strong>result</strong>: The outcome of the match, indicating whether the team won (1) or lost (0).</li>
+| **Column**        | **Definition**                                                                                     |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| **dragons**        | The number of dragons secured.                                                                    |
+| **league**         | The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).                        |
+| **result**         | The outcome of the match, indicating whether the team won (1) or lost (0).                        |
 </ul>
 <p>
     These columns are central to answering our question about the relationship between dragon control and win rates in professional matches.
