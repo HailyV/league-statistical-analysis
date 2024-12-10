@@ -74,22 +74,23 @@
         <li>Transformed the <code>result</code> column into a boolean format and stored it in a new column, <code>result_bool</code>, to facilitate binary classification analysis.</li>
     </ul>
 </p>
+<p> The first few rows and columns are shown below:</p>
 <table>
     <thead>
         <tr>
-            <th>gameid</th>
-            <th>datacompleteness</th>
-            <th>url</th>
-            <th>league</th>
-            <th>year</th>
-            <th>split</th>
-            <th>playoffs</th>
-            <th>date</th>
-            <th>game</th>
-            <th>patch</th>
-            <th>xpdiffat25</th>
-            <th>csdiffat25</th>
-            <th>killsat25</th>
+            <th><strong>gameid</strong></th>
+            <th><strong>datacompleteness</strong></th>
+            <th><strong>url</strong></th>
+            <th><strong>league</strong></th>
+            <th><strong>year</strong></th>
+            <th><strong>split</strong></th>
+            <th><strong>playoffs</strong></th>
+            <th><strong>date</strong></th>
+            <th><strong>game</strong></th>
+            <th><strong>patch</strong></th>
+            <th><strong>xpdiffat25</strong></th>
+            <th><strong>csdiffat25</strong></th>
+            <th><strong>killsat25</strong></th>
         </tr>
     </thead>
     <tbody>
