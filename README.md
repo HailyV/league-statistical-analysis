@@ -74,11 +74,99 @@
         <li>Transformed the <code>result</code> column into a boolean format and stored it in a new column, <code>result_bool</code>, to facilitate binary classification analysis.</li>
     </ul>
 </p>
-| gameid                | datacompleteness | url                               | league | year | split  | playoffs | date                | game | patch | xpdiffat25 | csdiffat25 |killsat25 
-|-----------------------|------------------|-----------------------------------|--------|------|--------|----------|---------------------|------|-------|------------|------------|----------
-| ESPORTSTMNT01_2690210 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 07:44:08 | 1    | 12.01 | -3971.0    | -97.0      | 6.0      
-| ESPORTSTMNT01_2690210 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 07:44:08 | 1    | 12.01 | 3971.0     | 97.0       | 7.0      
-| ESPORTSTMNT01_2690219 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 08:38:24 | 1    | 12.01 | -7746.0    | -33.0      | 1.0      
-| ESPORTSTMNT01_2690219 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 08:38:24 | 1    | 12.01 | 7746.0     | 33.0       | 8.0      
-| 8401-8401_game_1      | partial          | https://lpl.qq.com/es/stats.shtml?bmid=8401 | LPL    | 2022 | Spring | 0        | 2022-01-10 09:24:26 | 1    | 12.01 | NaN        | NaN |NaN   |
-
+<table>
+    <thead>
+        <tr>
+            <th>gameid</th>
+            <th>datacompleteness</th>
+            <th>url</th>
+            <th>league</th>
+            <th>year</th>
+            <th>split</th>
+            <th>playoffs</th>
+            <th>date</th>
+            <th>game</th>
+            <th>patch</th>
+            <th>xpdiffat25</th>
+            <th>csdiffat25</th>
+            <th>killsat25</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ESPORTSTMNT01_2690210</td>
+            <td>complete</td>
+            <td>NaN</td>
+            <td>LCKC</td>
+            <td>2022</td>
+            <td>Spring</td>
+            <td>0</td>
+            <td>2022-01-10 07:44:08</td>
+            <td>1</td>
+            <td>12.01</td>
+            <td>-3971.0</td>
+            <td>-97.0</td>
+            <td>6.0</td>
+        </tr>
+        <tr>
+            <td>ESPORTSTMNT01_2690210</td>
+            <td>complete</td>
+            <td>NaN</td>
+            <td>LCKC</td>
+            <td>2022</td>
+            <td>Spring</td>
+            <td>0</td>
+            <td>2022-01-10 07:44:08</td>
+            <td>1</td>
+            <td>12.01</td>
+            <td>3971.0</td>
+            <td>97.0</td>
+            <td>7.0</td>
+        </tr>
+        <tr>
+            <td>ESPORTSTMNT01_2690219</td>
+            <td>complete</td>
+            <td>NaN</td>
+            <td>LCKC</td>
+            <td>2022</td>
+            <td>Spring</td>
+            <td>0</td>
+            <td>2022-01-10 08:38:24</td>
+            <td>1</td>
+            <td>12.01</td>
+            <td>-7746.0</td>
+            <td>-33.0</td>
+            <td>1.0</td>
+        </tr>
+        <tr>
+            <td>ESPORTSTMNT01_2690219</td>
+            <td>complete</td>
+            <td>NaN</td>
+            <td>LCKC</td>
+            <td>2022</td>
+            <td>Spring</td>
+            <td>0</td>
+            <td>2022-01-10 08:38:24</td>
+            <td>1</td>
+            <td>12.01</td>
+            <td>7746.0</td>
+            <td>33.0</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>8401-8401_game_1</td>
+            <td>partial</td>
+            <td><a href="https://lpl.qq.com/es/stats.shtml?bmid=8401">Link</a></td>
+            <td>LPL</td>
+            <td>2022</td>
+            <td>Spring</td>
+            <td>0</td>
+            <td>2022-01-10 09:24:26</td>
+            <td>1</td>
+            <td>12.01</td>
+            <td>NaN</td>
+            <td>NaN</td>
+            <td>NaN</td>
+        </tr>
+    </tbody>
+</table>
