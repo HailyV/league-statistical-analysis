@@ -22,45 +22,41 @@
 <hr>
 
 <div style="text-align: left;">
-    <h2>Key Match Insights</h2>
+    <h3>Key Match Insights</h3>
 </div>
 <ul>
     <li>In League of Legends, <strong>Dragon control</strong> is often considered a critical objective that can significantly impact a team's chances of winning.</li>
     <li>Teams that secure more dragons have better late-game scaling, buffs, and map control, leading to a higher probability of success.</li>
-    <li>Once four dragons have been secured by a team, that is the max amount a team can have. However if there is a stale-mate of dragon control then one team could acquire 3 versus the opposite team having 4</li>
+    <li>Once four dragons have been secured by a team, that is the max amount a team can have. However, if there is a stalemate of dragon control, one team could acquire 3 versus the opposite team having 4.</li>
 </ul>
 
 <hr>
 
 <div style="text-align: left;">
-    <h2>Analysis Question</h2>
+    <h3>Analysis Question</h3>
 </div>
 <div style="text-align: left;">
-    Does obtaining more dragons correlate with a higher win rate in (<strong>tier-one league</strong>) League of Legends matches?  
-</p>
-<p>
-    Dragon control is a key part of professional play, offering buffs that scale throughout the game. Investigating whether controlling more dragons aligns 
-    with a higher win rate could reveal insights about team strategies, objective prioritization, and meta preferences.
-    This analysis could help coaches make better choices as to whether dragons are an important factor in winning the game.
-</p>
+    <p>Does obtaining more dragons correlate with a higher win rate in (<strong>tier-one league</strong>) League of Legends matches?</p>
+    <p>
+        Dragon control is a key part of professional play, offering buffs that scale throughout the game. Investigating whether controlling more dragons aligns 
+        with a higher win rate could reveal insights about team strategies, objective prioritization, and meta preferences.
+        This analysis could help coaches make better choices as to whether dragons are an important factor in winning the game.
+    </p>
+</div>
 
 <hr>
 
 <div style="text-align: left;">
-    <h2>Dataset Summary</h2>
+    <h3>Dataset Summary</h3>
 </div>
 <p>
     The dataset contains approximately <strong>150,000 rows</strong> of data. For this analysis, we will focus on the following columns:
 </p>
 <ul>
-### Dataset Summary
-
-The dataset contains approximately **150,000 rows** of data. For this analysis, we will focus on the following columns:
-
-| **Column**        | **Definition**                                                                                     |
-|--------------------|---------------------------------------------------------------------------------------------------|
-| **dragons**        | The number of dragons secured.                                                                    |
-| **league**         | The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).                        |
-| **result**         | The outcome of the match, indicating whether the team won (1) or lost (0).                        |
-
-These columns are central to answering our question about the relationship between dragon control and win rates in professional matches.
+    <li><strong>dragons</strong>: The number of dragons secured.</li>
+    <li><strong>league</strong>: The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).</li>
+    <li><strong>result</strong>: The outcome of the match, indicating whether the team won (1) or lost (0).</li>
+</ul>
+<p>
+    These columns are central to answering our question about the relationship between dragon control and win rates in professional matches.
+</p>
