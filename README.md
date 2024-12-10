@@ -174,11 +174,3 @@
 <div style="text-align: left;">
     <h3>Univariate Analysis</h3>
     <p>The following plot shows the distribution of dragons secured in professional League of Legends matches:</p>
-        <iframe 
-            src="/assets/dragons_plot.html" 
-            width="800" 
-            height="600" 
-            frameborder="0" 
-            style="border: none;"
-        ></iframe>
-</div>
