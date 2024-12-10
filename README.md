@@ -62,3 +62,24 @@
 <p>
     These columns are central to answering our question about the relationship between dragon control and win rates in professional matches.
 </p>
+<div style="text-align: left;">
+    <h1>Data Cleaning and Exploratory Data Analysis</h1>
+</div>
+<p>
+    In the data cleaning process, several steps were performed to prepare this dataset for analysis:
+    <ul>
+        <li>Loaded the dataset from the 2022 League of Legends Esports match data using Oracle’s Elixir.</li>
+        <li>Filtered the dataset to retain only rows corresponding to team-level data by selecting rows where the <code>position</code> column equals "team".</li>
+        <li>Converted the game length from seconds to minutes and stored the result in a new column, <code>gamelength_minutes</code>, rounded to two decimal places for better readability.</li>
+        <li>Transformed the <code>result</code> column into a boolean format and stored it in a new column, <code>result_bool</code>, to facilitate binary classification analysis.</li>
+    </ul>
+</p>
+| gameid              | datacompleteness | url                                  | league | year | split  | playoffs | date                  | game | patch | xpdiffat25 | csdiffat25 | killsat25 | assistsat25 | deathsat25 | opp_killsat25 | opp_assistsat25 | opp_deathsat25 | gamelength_minutes | result_bool |
+|---------------------|------------------|--------------------------------------|--------|------|--------|----------|-----------------------|------|-------|------------|------------|-----------|-------------|------------|----------------|-----------------|-----------------|-------------------|-------------|
+| ESPORTSTMNT01_2690210 | complete         | NaN                                  | LCKC   | 2022 | Spring | 0        | 2022-01-10 07:44:08  | 1    | 12.01 | -3971.0     | -97.0      | 6.0       | 12.0        | 7.0        | 7.0            | 22.0           | 6.0             | 28.55             | False       |
+| ESPORTSTMNT01_2690210 | complete         | NaN                                  | LCKC   | 2022 | Spring | 0        | 2022-01-10 07:44:08  | 1    | 12.01 | 3971.0      | 97.0       | 7.0       | 22.0        | 6.0        | 6.0            | 12.0           | 7.0             | 28.55             | True        |
+| ESPORTSTMNT01_2690219 | complete         | NaN                                  | LCKC   | 2022 | Spring | 0        | 2022-01-10 08:38:24  | 1    | 12.01 | -7746.0     | -33.0      | 1.0       | 1.0         | 8.0        | 8.0            | 13.0           | 1.0             | 35.23             | False       |
+| ESPORTSTMNT01_2690219 | complete         | NaN                                  | LCKC   | 2022 | Spring | 0        | 2022-01-10 08:38:24  | 1    | 12.01 | 7746.0      | 33.0       | 8.0       | 13.0        | 1.0        | 1.0            | 1.0            | 8.0             | 35.23             | True        |
+| 8401-8401_game_1     | partial          | https://lpl.qq.com/es/stats.shtml?bmid=8401 | LPL    | 2022 | Spring | 0        | 2022-01-10 09:24:26  | 1    | 12.01 | NaN         | NaN        | NaN       | NaN         | NaN        | NaN            | NaN            | NaN             | 22.75             | True        |
+
+
