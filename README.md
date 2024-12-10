@@ -11,7 +11,7 @@
     League of Legends is a MOBA (Multiplayer Online Battle Arena) style game where teams of five fight each other in order to defeat the nexus (main objective) and win.
 </p>
  
-<div style="text-align: center;">
+<div style="text-align: left;">
     <h2>Introduction</h2>
 </div>
 <p>
@@ -21,7 +21,7 @@
 
 <hr>
 
-<div style="text-align: center;">
+<div style="text-align: left;">
     <h2>Key Match Insights</h2>
 </div>
 <ul>
@@ -32,36 +32,35 @@
 
 <hr>
 
-<div style="text-align: center;">
+<div style="text-align: left;">
     <h2>Analysis Question</h2>
 </div>
-<p style="text-align: center;">
+<div style="text-align: left;">
     Does obtaining more dragons correlate with a higher win rate in (<strong>tier-one league</strong>) League of Legends matches?  
 </p>
 <p>
     Dragon control is a key part of professional play, offering buffs that scale throughout the game. Investigating whether controlling more dragons aligns 
     with a higher win rate could reveal insights about team strategies, objective prioritization, and meta preferences.
+    This analysis could help coaches make better choices as to whether dragons are an important factor in winning the game.
 </p>
 
 <hr>
 
-<div style="text-align: center;">
+<div style="text-align: left;">
     <h2>Dataset Summary</h2>
 </div>
 <p>
     The dataset contains approximately <strong>150,000 rows</strong> of data. For this analysis, we will focus on the following columns:
 </p>
 <ul>
-| **Columns** | **Definition**                                                                 |
-|--------------|---------------------------------------------------------------------------------|
-| dragons      | The number of dragons secured                                                  |
-| elders       | The number of elder dragons secured                                            |
-| barons       | The number of barons secured                                                   |
-| firsttothree | The first team to destroy three towers                                         |
-    towers      
-| league       | The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).     |
-| result       | The outcome of the match, indicating whether the team won (1) or lost (0).     | 
-</ul>
-<p>
-    These columns are central to answering our question about the relationship between dragon control and win rates in professional matches.
-</p>
+### Dataset Summary
+
+The dataset contains approximately **150,000 rows** of data. For this analysis, we will focus on the following columns:
+
+| **Column**        | **Definition**                                                                                     |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| **dragons**        | The number of dragons secured.                                                                    |
+| **league**         | The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).                        |
+| **result**         | The outcome of the match, indicating whether the team won (1) or lost (0).                        |
+
+These columns are central to answering our question about the relationship between dragon control and win rates in professional matches.
