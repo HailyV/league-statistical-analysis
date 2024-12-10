@@ -80,5 +80,5 @@
 | ESPORTSTMNT01_2690210 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 07:44:08 | 1    | 12.01 | 3971.0     | 97.0       | 7.0      
 | ESPORTSTMNT01_2690219 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 08:38:24 | 1    | 12.01 | -7746.0    | -33.0      | 1.0      
 | ESPORTSTMNT01_2690219 | complete         | NaN                               | LCKC   | 2022 | Spring | 0        | 2022-01-10 08:38:24 | 1    | 12.01 | 7746.0     | 33.0       | 8.0      
-| 8401-8401_game_1      | partial          | https://lpl.qq.com/es/stats.shtml?bmid=8401 | LPL    | 2022 | Spring | 0        | 2022-01-10 09:24:26 | 1    | 12.01 | NaN        | NaN        | NaN       |
+| 8401-8401_game_1      | partial          | https://lpl.qq.com/es/stats.shtml?bmid=8401 | LPL    | 2022 | Spring | 0        | 2022-01-10 09:24:26 | 1    | 12.01 | NaN        | NaN |NaN   |
 
