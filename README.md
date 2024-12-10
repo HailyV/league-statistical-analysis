@@ -202,3 +202,12 @@
     <p>Looking at the data it seems most professional teams acquire from 2-4 dragons every game. This higher numbers indicate dragon stalemates
         as having any more than 4 dragons in a game would mean both teams are having even fights to obtain dragons.
     </p>
+<iframe
+  src="assets/avg_dragons.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+    <p>Most leagues averaged about 2.2 dragons this season (2022). However the highest average is LCK which could be telling of their strategy for prioritizing
+        dragons compared to other teams.
+    </p>
