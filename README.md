@@ -1,4 +1,4 @@
-<div align="center">
+<div style="text-align: center;">
     <h1>League of Legends Analytics on Professional Teams</h1>
     <p>Objective Control and Win Rate Insights</p>
 </div>
