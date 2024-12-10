@@ -12,7 +12,7 @@
 </p>
  
 <div style="text-align: left;">
-    <h2>Introduction</h2>
+    <h2><strong>Introduction</strong></h2>
 </div>
 <p>
     This dataset originates from Oracle’s Elixir, covering match data from the 2022 professional League of Legends season. 
