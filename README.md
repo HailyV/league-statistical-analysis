@@ -5,14 +5,14 @@
 ---
 
 <div style="text-align: center;">
-    <h1>League of Legends: Objectives and Their Importance for League Win-Rates</h1>
+    <h3>League of Legends: Objectives and Their Importance for League Win-Rates</h1>
 </div>
 <p>
     League of Legends is a MOBA (Multiplayer Online Battle Arena) style game where teams of five fight each other in order to defeat the nexus (main objective) and win.
 </p>
  
 <div style="text-align: left;">
-    <h2><strong>Introduction</strong></h2>
+    <h1><strong>Introduction</strong></h2>
 </div>
 <p>
     This dataset originates from Oracle’s Elixir, covering match data from the 2022 professional League of Legends season. 
