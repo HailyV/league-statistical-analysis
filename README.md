@@ -220,6 +220,11 @@
     LCK, which could be telling of their strategy for prioritizing dragons compared to other teams.
 </p>
 
+<div style="text-align: left;">
+    <h3>Bivariate Analysis</h3>
+    <p>The following plots show the relationships between two columns in the data:</p>
+</div>
+
 <iframe 
     src="assets/vspm_v_kills.html" 
     width="800" 
