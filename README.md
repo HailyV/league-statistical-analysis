@@ -199,3 +199,6 @@
         frameborder="0" 
         style="border: none;">
 </iframe>
+    <p>Looking at the data it seems most professional teams acquire from 2-4 dragons every game. This higher numbers indicate dragon stalemates
+        as having any more than 4 dragons in a game would mean both teams are having even fights to obtain dragons.
+    </p>
