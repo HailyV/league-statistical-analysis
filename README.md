@@ -264,8 +264,14 @@
     <h3>NMAR Analysis</h3>
 </div>
 <p>
-    Based on the dataset, I believe that the <code>result<code/> column (indicating whether the team won or lost) is Not Missing at Random (NMAR). This means the missingness of the result column is directly related to the outcome of the matches themselves, and the probability of a missing value is influenced by factors tied to the column's content. <code>result</code> could be missing more often in matches that were forfeited, abandoned, or had technical issues. For instance, if a match ends prematurely, its result may not be recorded, and technical issues have happened in professional matches before.
-<p/>
+    Based on the dataset, I believe that the <code>result</code> column (indicating whether the team won or lost) is 
+    Not Missing at Random (NMAR). This means the missingness of the <code>result</code> column is directly related 
+    to the outcome of the matches themselves, and the probability of a missing value is influenced by factors tied 
+    to the column's content. For example, <code>result</code> could be missing more often in matches that were 
+    forfeited, abandoned, or had technical issues. For instance, if a match ends prematurely, its result may not 
+    be recorded. Technical issues have occurred in professional matches before, further contributing to missing 
+    data in this column.
+</p>
 
 <div style="text-align: left;">
     <h3>Missingness Dependency</h3>
@@ -303,4 +309,38 @@
         <strong>MAR on `barons`</strong>, as the distribution of game length depends on whether the <code>barons</code> data is missing 
         or not.
     </p>
+
+    <p>
+        The analysis aimed to determine if <code>result</code> is Missing at Random (MAR) on the <code>gamelength</code> column, 
+        based on a permutation test using the Total Variation Distance (TVD) statistic.
+    </p>
+    <ul>
+        <li><strong>Observed TVD</strong>: 0.000548</li>
+        <li><strong>Permutation P-value</strong>: 1.0</li>
+    </ul>
+    <iframe
+      src="assets/tvd_dist.html"
+      width="800"
+      height="600"
+      frameborder="0"
+    ></iframe>
+    <h4>Interpretation of Results</h4>
+    <ul>
+        <li><strong>Observed TVD</strong>: 
+            The TVD measures the total variation between the distributions of <code>result</code> for rows where 
+            <code>gamelength</code> is missing versus not missing. A higher value indicates more significant differences 
+            between the two distributions.
+        </li>
+        <li><strong>Permutation P-value</strong>: 
+            The p-value quantifies the likelihood of observing a TVD at least as extreme as 0.000548 under the null 
+            hypothesis that the missingness of <code>gamelength</code> is independent of <code>result</code>. A p-value of 
+            1.0 indicates that this result is very likely under the null hypothesis.
+        </li>
+    </ul>
+    <h4>Conclusion</h4>
+    <p>
+        The <strong>p-value of 1.0</strong> suggests no evidence to reject the null hypothesis. This implies that the missingness 
+        of <code>gamelength</code> is independent of <code>result</code>. Therefore, <code>result</code> is not <strong>MAR on 
+        `gamelength`</strong>, as there is no significant dependency between the two variables.
+    </p>    
 </div>
