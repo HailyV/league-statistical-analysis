@@ -507,3 +507,60 @@
 
     <img src="assets/finalplot.png" alt="Final Plot" width="800" height="600" />
 </div>
+
+<div style="text-align: left;">
+    <h1>Fairness Analysis</h1>
+    <p>
+        The fairness analysis evaluates whether our model is biased towards predicting better for one team side (blue or red). 
+        Specifically, we assess whether the model's precision is significantly different between blue and red sides.
+    </p>
+    <h2>Null and Alternative Hypotheses</h2>
+    <ul>
+        <li><strong>Null Hypothesis (H<sub>0</sub>):</strong> Our model is fair. Its precision for the blue side and red side are roughly the same, and any differences are due to random chance.</li>
+        <li><strong>Alternative Hypothesis (H<sub>1</sub>):</strong> Our model is unfair. Its precision for the red side is lower than its precision for the blue side.</li>
+    </ul>
+    <h2>Evaluation Metric</h2>
+    <p>
+        The evaluation metric chosen for this analysis is <strong>precision</strong>. Precision is a measure of the proportion of true positive predictions out of all positive predictions made by the model. It is particularly useful in scenarios where the cost of false positives is high.
+    </p>
+    <h2>Groups</h2>
+    <ul>
+        <li><strong>Group X:</strong> Predictions and outcomes for the blue side of the map.</li>
+        <li><strong>Group Y:</strong> Predictions and outcomes for the red side of the map.</li>
+    </ul>
+    <h2>Test Statistic</h2>
+    <p>
+        The test statistic is the <strong>difference in precision</strong> between the blue side and red side predictions. 
+        The observed difference in precision was computed as:
+    </p>
+    <ul>
+        <li><strong>Observed Precision Difference:</strong> 0.0314</li>
+    </ul>
+    <h2>Permutation Test</h2>
+    <p>
+        To test the null hypothesis, a permutation test was conducted as follows:
+    </p>
+    <ul>
+        <li>Randomly shuffled the team sides (blue or red) in the test set to create a null distribution of precision differences.</li>
+        <li>Calculated the precision for the shuffled blue and red sides and their difference for each permutation.</li>
+        <li>Repeated the process 5,000 times to generate the null distribution.</li>
+    </ul>
+    <h2>Results</h2>
+    <ul>
+        <li><strong>P-value:</strong> 0.012</li>
+    </ul>
+    <h2>Conclusion</h2>
+    <p>
+        The observed precision difference of 0.0314 is statistically significant, with a p-value of 0.012. This indicates that the precision difference between the blue and red sides is unlikely to have occurred by random chance. 
+        Thus, we reject the null hypothesis and conclude that our model is <strong>unfair</strong>, with higher precision for the blue side than the red side.
+    </p>
+    <h2>Recommendations</h2>
+    <ul>
+        <li>Investigate potential sources of bias in the model that may favor predictions for the blue side.</li>
+        <li>Consider adding features or rebalancing the training data to ensure fairer predictions across team sides.</li>
+        <li>Evaluate additional metrics (e.g., recall, F1-score) to further analyze the model's fairness.</li>
+    </ul>
+    <h2>Visualization</h2>
+    <p>The histogram below shows the null distribution of the precision differences and the observed difference:</p>
+    <img src="assets/fairnessanalysis.png" alt="Fairness Test Null Distribution" width="800" height="600" />
+</div>
