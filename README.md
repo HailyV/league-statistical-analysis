@@ -504,4 +504,6 @@
     <p>
         The model achieved a <strong>Test Set Accuracy</strong> of 0.872, demonstrating its ability to make accurate predictions. While the model performs decently, further feature engineering or the inclusion of more advanced models might improve its performance.
     </p>
+
+    <img src="assets/finalplot.png" alt="Final Plot" width="800" height="600" />
 </div>
