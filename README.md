@@ -402,6 +402,7 @@
         <ul>
             <li><strong>Result</strong>: A binary variable indicating whether the team won (1) or lost (0) the game. (<code>nominal</code>)</li>
         </ul>
+        <h3>Encoding</h3>
         <p>
             The following encodings were performed on the data to prepare it for analysis:
             <ul>
@@ -434,5 +435,22 @@
             Objectives like Barons, Dragons, Heralds, and Elders, and Towers are often indicators of game strategy and control. Predicting a team’s win based on these objectives could provide valuable insights for players, analysts, and coaches. By understanding the relationship between these objectives and victory, teams can refine their gameplay strategies to optimize their chances of winning.
         </p>
     </div>
-
+    <h3>Results</h3>
+        <p>
+            The performance of the current model is as follows:
+            <ul>
+                <li><strong>Test Accuracy:</strong> 0.8188</li>
+                <li><strong>Train Accuracy:</strong> 0.8146</li>
+            </ul>
+            While the model achieves over 80% accuracy on both the training and testing datasets, indicating it generalizes reasonably well to unseen data, this performance is considered "okay" rather than exceptional. There are likely areas for improvement, as the model does not fully capture the complexity of the relationships in the data. Factors such as the choice of features, the type of model, and the handling of missing data could be contributing to its limitations.
+        </p>
+        <p>
+            To enhance the model's performance, the following steps could be considered:
+            <ul>
+                <li>Feature engineering to better capture key interactions or important aspects of the game.</li>
+                <li>Testing more complex models, such as ensemble methods (e.g., random forests or gradient boosting).</li>
+                <li>Hyperparameter tuning to optimize the performance of the decision tree.</li>
+            </ul>
+            Overall, while the model's performance is a good starting point, there is significant room for improvement to better capture the nuances of professional League of Legends matches.
+        </p>    
 </div>
