@@ -508,6 +508,7 @@
     <img src="assets/finalplot.png" alt="Final Plot" width="800" height="600" />
 </div>
 
+
 <div style="text-align: left;">
     <h1>Fairness Analysis</h1>
     <p>
@@ -547,11 +548,11 @@
     </ul>
     <h2>Results</h2>
     <ul>
-        <li><strong>P-value:</strong> 0.012</li>
+        <li><strong>P-value:</strong> 0.024</li>
     </ul>
     <h2>Conclusion</h2>
     <p>
-        The observed precision difference of 0.0314 is statistically significant, with a p-value of 0.012. This indicates that the precision difference between the blue and red sides is unlikely to have occurred by random chance. 
+        The observed precision difference of 0.0314 is statistically significant, with a p-value of 0.024. This indicates that the precision difference between the blue and red sides is unlikely to have occurred by random chance. 
         Thus, we reject the null hypothesis and conclude that our model is <strong>unfair</strong>, with higher precision for the blue side than the red side.
     </p>
     <h2>Recommendations</h2>
