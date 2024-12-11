@@ -60,7 +60,7 @@
         </tr>
         <tr>
             <td><strong>league</strong></td>
-            <td>The tier-one league where the match took place (e.g., LCS, LEC, LCK, LPL).</td>
+            <td>The leagues where the match took place (e.g., LCS, LEC, LCK, LPL).</td>
         </tr>
         <tr>
             <td><strong>result</strong></td>
