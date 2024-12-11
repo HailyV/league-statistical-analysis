@@ -454,3 +454,54 @@
             Overall, while the model's performance is a good starting point, there is significant room for improvement to better capture the nuances of professional League of Legends matches.
         </p>    
 </div>
+
+<div style="text-align: left;">
+    <h1>Final Model</h1>
+    <h3>Features Added</h3>
+    <p>
+        The following features were added to the model, and their transformations were specifically chosen to address unique aspects of the data and improve predictive performance:
+    </p>
+    <ul>
+        <li>
+            <strong>Dragons:</strong> This feature was kept as a numerical column because the range of values (0–7) is relatively large compared to other features. A 
+            <code>Standard Scaler</code> was applied to normalize the range and ensure fair contribution across features. This feature is critical because dragons provide significant in-game advantages that likely correlate with match outcomes.
+        </li>
+        <li>
+            <strong>Barons:</strong> The distribution of this feature was heavily skewed, with the majority of matches featuring 0 or 1 Baron. A 
+            <code>Quantile Transformer</code> was applied to mitigate the skew and create a more uniform distribution.
+        </li>
+        <li>
+            <strong>Elders:</strong> Similar to Barons, this feature exhibited a skewed distribution (most games had 0 or 1 Elder Dragon). A 
+            <code>Quantile Transformer</code> was used to address the skew and make the feature more informative for the model.
+        </li>
+    </ul>
+    <h3>Why These Features Improve Performance</h3>
+    <p>
+        These features were selected and transformed to align with the underlying data-generating process of professional League of Legends matches:
+    </p>
+    <ul>
+        <li>
+            The addition of <strong>Dragons</strong> captures critical information about a team's control over map objectives and scaling potential, which is closely tied to match success.
+        </li>
+        <li>
+            <strong>Barons</strong> and <strong>Elders</strong> are both high-impact objectives that heavily influence late-game outcomes. By addressing their skewed distributions, the model can better differentiate matches with these objectives and incorporate this information into predictions.
+        </li>
+        <li>
+            Scaling and transformation choices (e.g., <code>Standard Scaler</code> and <code>Quantile Transformer</code>) ensure that each feature contributes appropriately to the model, avoiding dominance by features with larger numerical ranges or skewed distributions.
+        </li>
+    </ul>
+    <h3>Final Model Performance</h3>
+    <p>
+        The final model is a <strong>Random Forest Classifier</strong> tuned using <code>GridSearchCV</code>. The best hyperparameters found were:
+    </p>
+    <ul>
+        <li><strong>Max Depth:</strong> 6</li>
+        <li><strong>Max Features:</strong> Log2</li>
+        <li><strong>Min Samples Leaf:</strong> 2</li>
+        <li><strong>Min Samples Split:</strong> 8</li>
+        <li><strong>Number of Estimators:</strong> 50</li>
+    </ul>
+    <p>
+        The model achieved a <strong>Test Set Accuracy</strong> of 0.872, demonstrating its ability to make accurate predictions. While the model performs decently, further feature engineering or the inclusion of more advanced models might improve its performance.
+    </p>
+</div>
