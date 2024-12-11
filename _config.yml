@@ -1,3 +1,4 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 title: Team Objectives and Their Impact on Winrate
+theme_color: "#def0fa"
