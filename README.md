@@ -237,3 +237,22 @@
     Teams with a higher VSPM tend to be more active in creating map pressure and securing kills. This correlation 
     is seen in the plot showing the importance of vision control in facilitating aggressive plays and securing objectives.
 </p>
+
+<div style="text-align: left;">
+    <h3>Interesting Aggregates</h3>
+    <p>The following plot show the relationship between win rate and the number of dragons secured after aggregating the data:</p>
+</div>
+
+<iframe 
+    src="assets/agg_wr.html" 
+    width="800" 
+    height="600" 
+    frameborder="0" 
+    style="border: none; margin-top: 20px; margin-bottom: 20px;">
+</iframe>
+<p>
+    After <code>groupby</code>-ing the win rate by the number of dragons secured, the analysis reveals a clear positive correlation. 
+    This means that as teams secure more dragons during a match, their likelihood of winning increases significantly. 
+    The positive correlation shows the importance of dragon control as a strategic objective in professional play, 
+    as it provides advantages that translate into higher success rates in matches.
+</p>
