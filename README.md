@@ -344,3 +344,33 @@
         `gamelength`</strong>, as there is no significant dependency between the two variables.
     </p>    
 </div>
+<div style="text-align: left;">
+    <h1>Hypothesis Testing</h1>
+        <div style="text-align: left;">
+        <h2>Hypothesis Test: Relationship Between Dragon Control and Win Rate</h2>
+    
+        <h3>Hypotheses</h3>
+        <p>
+            We are testing whether the Tier-one league with the highest average dragon control also has a significantly higher win rate compared to the average win rate across all Tier-one leagues.
+        </p>
+        <ul>
+            <li><strong>Null Hypothesis (H0)</strong>: The league with the highest average dragon control does not have a higher win rate than the average win rate across all leagues. Any observed difference is due to random chance.</li>
+            <li><strong>Alternative Hypothesis (H1)</strong>: The league with the highest average dragon control has a significantly higher win rate than the average win rate across all leagues.</li>
+        </ul>
+    
+        <h3>Observed Statistic</h3>
+        <ul>
+            <li>First, we identified the league with the highest average dragon control.</li>
+            <li><strong>Observed Statistic</strong>: Win Rate of the League with Highest Dragon Control – Mean Win Rate Across All Leagues</li>
+            <li>In this case, the observed statistic is <strong>0.0784</strong>.</li>
+        </ul>
+    
+        <h3>Permutation Test</h3>
+        <p>To test the null hypothesis, we conducted a permutation test:</p>
+        <ol>
+            <li>Randomly shuffled the win rates across leagues.</li>
+            <li>Calculated the test statistic (difference in win rates) for each permutation.</li>
+            <li>Repeated the permutation process 10,000 times to build the null distribution of the test statistic.</li>
+        </ol>
+    </div>
+</div>
