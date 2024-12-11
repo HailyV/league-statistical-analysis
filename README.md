@@ -378,3 +378,61 @@
         the highest average dragon control has significantly higher win rate compared to the tier one league. This could mean that teams who prioritize <code>dragons</code> compared to other objectives have a higher chance of winning matches, which would influence how coaches of the game would excecute their strategies.</p>
     </div>
 </div>
+
+
+<div style="text-align: left;">
+    <h1>Baseline Model</h1>
+        <div style="text-align: left;">
+        <h2>Prediction Problem: Predicting Team Victory Using Game Objectives</h2>
+    
+        <h3>Prediction Problem</h3>
+        <p>
+            The goal is to predict whether a team wins or loses a game based on the number of key objectives they secured during the game. Specifically, the features used for prediction are:
+        </p>
+        <ul>
+            <li><strong>Barons</strong>: The number of Baron Nashor objectives secured. (<code>quantitative</code>)</li>
+            <li><strong>Dragons</strong>: The number of dragons secured. (<code>quantitative</code>)</li>
+            <li><strong>Heralds</strong>: The number of Rift Heralds secured. (<code>quantitative</code>)</li>
+            <li><strong>Elders</strong>: The number of Elder Dragons secured. (<code>quantitative</code>)</li>
+            <li><strong>Firsttothreetowers</strong>: Boolean of the team to secure the first three towers. (<code>nominal</code>)</li>
+        </ul>
+        <p>
+            The target variable is:
+        </p>
+        <ul>
+            <li><strong>Result</strong>: A binary variable indicating whether the team won (1) or lost (0) the game. (<code>nominal</code>)</li>
+        </ul>
+        <p>
+            The following encodings were performed on the data to prepare it for analysis:
+            <ul>
+                <li>
+                    <strong>Barons:</strong> This column was binarized to a threshold of 1.0. Matches with more than 1 baron are rare, so the column was encoded to indicate whether a team secured at least 1 baron (1) or none (0).
+                </li>
+                <li>
+                    <strong>Dragons:</strong> This column was retained as a numerical feature since dragon counts are more distributed (e.g., 0-7) and provide useful variability for predictive modeling without binarization.
+                </li>
+                <li>
+                    <strong>Elders:</strong> Similar to barons, matches with more than 1 elder dragon are rare. This column was binarized to indicate whether a team secured at least 1 elder dragon (1) or none (0).
+                </li>
+                <li>
+                    <strong>Heralds:</strong> Matches with more than 2 heralds are rare, so the column was binarized to a threshold of 1.0, indicating whether a team secured at least 1 herald (1) or none (0).
+                </li>
+                <li>
+                    <strong>FirstToThreeTowers:</strong> This column was already binary, so it was retained as-is. It indicates whether a team was the first to secure three towers in a match.
+                </li>
+            </ul>
+            These encodings ensure the data is more interpretable and suitable for machine learning models, reducing unnecessary complexity while retaining meaningful distinctions in key objectives.
+        </p>
+
+        <h3>Approach</h3>
+        <p>
+            We will use a <strong>Decision Tree Classifier</strong> to predict the outcome of a match (win or loss) based on the number of objectives secured by a team. The Decision Tree will split the data into branches based on feature thresholds, allowing us to understand how each objective contributes to the prediction. The model will be trained on the dataset and evaluated for its accuracy and interpretability.
+        </p>
+    
+        <h3>Why This Prediction Problem?</h3>
+        <p>
+            Objectives like Barons, Dragons, Heralds, and Elders, and Towers are often indicators of game strategy and control. Predicting a team’s win based on these objectives could provide valuable insights for players, analysts, and coaches. By understanding the relationship between these objectives and victory, teams can refine their gameplay strategies to optimize their chances of winning.
+        </p>
+    </div>
+
+</div>
