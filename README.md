@@ -256,3 +256,51 @@
     The positive correlation shows the importance of dragon control as a strategic objective in professional play, 
     as it provides advantages that translate into higher success rates in matches.
 </p>
+<div style="text-align: left;">
+    <h1>Assessment of Missingness</h1>
+</div>
+
+<div style="text-align: left;">
+    <h3>NMAR Analysis</h3>
+</div>
+<p>
+    Based on the dataset, I believe that the <code>result<code/> column (indicating whether the team won or lost) is Not Missing at Random (NMAR). This means the missingness of the result     column is directly related to the outcome of the matches themselves, and the probability of a missing value is influenced by factors tied to the column's content. <code>result</code>     could be missing more often in matches that were forfeited, abandoned, or had technical issues. For instance, if a match ends prematurely, its result may not be recorded, and technical     issues have happened in professional matches before.
+<p/>
+
+<div style="text-align: left;">
+    <h3>Missingness Dependency</h3>
+    <p>
+        The analysis aimed to determine if <code>gamelength</code> is Missing at Random (MAR) on the <code>barons</code> column, 
+        based on a permutation test using the Kolmogorov-Smirnov (KS) statistic.
+    </p>
+    <ul>
+        <li><strong>Observed KS Statistic</strong>: 0.0412</li>
+        <li><strong>Permutation P-value</strong>: 0.0</li>
+    </ul>
+    <iframe
+      src="assets/ks_dist.html"
+      width="800"
+      height="600"
+      frameborder="0"
+    ></iframe>
+    <h4>Interpretation of Results</h4>
+    <ul>
+        <li><strong>Observed KS Statistic</strong>: 
+            The KS statistic measures the difference between the distributions of <code>gamelength</code> for rows 
+            where <code>barons</code> is missing versus not missing. A higher value indicates more significant differences 
+            between the two distributions.
+        </li>
+        <li><strong>Permutation P-value</strong>: 
+            The p-value quantifies the likelihood of observing a KS statistic at least as extreme as 0.0412 under the null 
+            hypothesis that the missingness of <code>barons</code> is independent of <code>gamelength</code>. A p-value of 0.0 
+            indicates that this result is extremely unlikely under the null hypothesis.
+        </li>
+    </ul>
+    <h4>Conclusion</h4>
+    <p>
+        The <strong>p-value of 0.0</strong> suggests strong evidence to reject the null hypothesis. This implies that the missingness 
+        of <code>barons</code> is not independent of <code>gamelength</code>. Therefore, <code>gamelength</code> is likely 
+        <strong>MAR on `barons`</strong>, as the distribution of game length depends on whether the <code>barons</code> data is missing 
+        or not.
+    </p>
+</div>
