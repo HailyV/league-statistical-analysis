@@ -240,8 +240,52 @@
 
 <div style="text-align: left;">
     <h3>Interesting Aggregates</h3>
-    <p>The following plot show the relationship between win rate and the number of dragons secured after aggregating the data:</p>
+    <p>The following plot and table show the relationship between win rate and the number of dragons secured after aggregating the data:</p>
 </div>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>dragons</th>
+      <th>win_rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0</td>
+      <td>0.038236</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>0.193715</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>0.475549</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>0.683746</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>0.881249</td>
+    </tr>
+    <tr>
+      <td>5.0</td>
+      <td>0.940580</td>
+    </tr>
+    <tr>
+      <td>6.0</td>
+      <td>0.812500</td>
+    </tr>
+    <tr>
+      <td>7.0</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>After aggregating the data, it seems like the more dragons a team has the higher the win rate. Lets look at the plot and see:</p>
 
 <iframe 
     src="assets/agg_wr.html" 
