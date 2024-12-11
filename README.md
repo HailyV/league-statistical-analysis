@@ -264,7 +264,7 @@
     <h3>NMAR Analysis</h3>
 </div>
 <p>
-    Based on the dataset, I believe that the <code>result<code/> column (indicating whether the team won or lost) is Not Missing at Random (NMAR). This means the missingness of the result     column is directly related to the outcome of the matches themselves, and the probability of a missing value is influenced by factors tied to the column's content. <code>result</code>     could be missing more often in matches that were forfeited, abandoned, or had technical issues. For instance, if a match ends prematurely, its result may not be recorded, and technical     issues have happened in professional matches before.
+    Based on the dataset, I believe that the <code>result<code/> column (indicating whether the team won or lost) is Not Missing at Random (NMAR). This means the missingness of the result column is directly related to the outcome of the matches themselves, and the probability of a missing value is influenced by factors tied to the column's content. <code>result</code> could be missing more often in matches that were forfeited, abandoned, or had technical issues. For instance, if a match ends prematurely, its result may not be recorded, and technical issues have happened in professional matches before.
 <p/>
 
 <div style="text-align: left;">
