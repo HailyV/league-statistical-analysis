@@ -243,7 +243,7 @@
     <p>The following plot and table show the relationship between win rate and the number of dragons secured after aggregating the data:</p>
 </div>
 
-<table border="1">
+<table>
   <thead>
     <tr>
       <th>dragons</th>
