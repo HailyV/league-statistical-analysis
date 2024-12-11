@@ -11,7 +11,7 @@
 <p style="text-align: center;">
     League of Legends is a MOBA (Multiplayer Online Battle Arena) style game where teams of five fight each other in order to defeat the nexus (main objective) and win.
 </p>
-
+<h1>Introduction</h1>
 <hr>
 
 <div style="text-align: left;">
