@@ -1,6 +1,7 @@
 <div style="text-align: center;">
     <h1>League of Legends Analytics on Professional Teams</h1>
     <p>Objective Control and Win Rate Insights</p>
+    <p>Created By: Haily Vuong</p>
 </div>
 
 <hr>
@@ -389,7 +390,7 @@
     </p>    
 </div>
 <div style="text-align: left;">
-    <h1>Hypothesis Testing</h1>
+    <h1>Framing a Prediction Problem</h1>
         <div style="text-align: left;">
         <h2>Hypothesis Test: Relationship Between Dragon Control and Win Rate</h2>
     
