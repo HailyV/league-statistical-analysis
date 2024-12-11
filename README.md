@@ -408,6 +408,7 @@
             <li>First, we identified the league with the highest average dragon control.</li>
             <li><strong>Observed Statistic</strong>: Win Rate of the League with Highest Dragon Control – Mean Win Rate Across All Leagues</li>
             <li>In this case, the observed statistic is <strong>0.0784</strong>.</li>
+            <li>I want to capture the direction of the observed statistic, so we are using difference instead of absolute difference.</li>
         </ul>
     
         <h3>Permutation Test</h3>
@@ -471,9 +472,11 @@
 
         <h3>Approach</h3>
         <p>
-            We will use a <strong>Decision Tree Classifier</strong> to predict the outcome of a match (win or loss) based on the number of objectives secured by a team. The Decision Tree will split the data into branches based on feature thresholds, allowing us to understand how each objective contributes to the prediction. The model will be trained on the dataset and evaluated for its accuracy and interpretability.
+            We will use a <strong>Decision Tree Classifier</strong> to predict the outcome of a match (binary classification) based on the number of objectives secured by a team. The Decision Tree will split the data into branches based on feature thresholds, allowing us to understand how each objective contributes to the prediction. The model will be trained on the dataset and evaluated for its accuracy and interpretability.
         </p>
-    
+        <h3>Data<h3>
+        <p>At the time of prediction we would have the post-game dataset, so anything in the post-game dataset is up for use.</p>
+        
         <h3>Why This Prediction Problem?</h3>
         <p>
             Objectives like Barons, Dragons, Heralds, and Elders, and Towers are often indicators of game strategy and control. Predicting a team’s win based on these objectives could provide valuable insights for players, analysts, and coaches. By understanding the relationship between these objectives and victory, teams can refine their gameplay strategies to optimize their chances of winning.
@@ -546,7 +549,7 @@
         <li><strong>Number of Estimators:</strong> 50</li>
     </ul>
     <p>
-        The model achieved a <strong>Test Set Accuracy</strong> of 0.872, demonstrating its ability to make accurate predictions. While the model performs decently, further feature engineering or the inclusion of more advanced models might improve its performance.
+        The model achieved a <strong>Test Set Accuracy</strong> of 0.872, demonstrating its ability to make accurate predictions. This model is more accurate than the baseline model, having higher test and training accuracy. Since it is a Random Forest Classifier, it averages the values of the decision trees it makes, letting it have less variance compared to the Decision Tree Classifier (base model).
     </p>
 
     <img src="assets/finalplot.png" alt="Final Plot" width="800" height="600" />
@@ -581,6 +584,10 @@
     <ul>
         <li><strong>Observed Precision Difference:</strong> 0.0314</li>
     </ul>
+    <h2>Significance Level</h2>
+    <p>
+        The significance level for this test will be <strong>0.05</strong>
+    </p>
     <h2>Permutation Test</h2>
     <p>
         To test the null hypothesis, a permutation test was conducted as follows:
