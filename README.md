@@ -354,8 +354,9 @@
             We are testing whether the Tier-one league with the highest average dragon control also has a significantly higher win rate compared to the average win rate across all Tier-one leagues.
         </p>
         <ul>
-            <li><strong>Null Hypothesis (H0)</strong>: The league with the highest average dragon control does not have a higher win rate than the average win rate across all leagues. Any observed difference is due to random chance.</li>
-            <li><strong>Alternative Hypothesis (H1)</strong>: The league with the highest average dragon control has a significantly higher win rate than the average win rate across all leagues.</li>
+            <li><strong>Null Hypothesis (H0)</strong>: The league with the highest average dragon control does not have a higher win rate than the average win rate across the tier one league. Any observed difference is due to random chance.</li>
+            <li><strong>Alternative Hypothesis (H1)</strong>: The league with the highest average dragon control has a significantly higher win rate than the average win rate across the tier one league.</li>
+            <li><strong>Significance Level</strong>: 0.05</li>
         </ul>
     
         <h3>Observed Statistic</h3>
@@ -372,5 +373,8 @@
             <li>Calculated the test statistic (difference in win rates) for each permutation.</li>
             <li>Repeated the permutation process 10,000 times to build the null distribution of the test statistic.</li>
         </ol>
+        <h3>Results</h3>
+        <p>The p_value acquired from the permutation test was : 0.0373. Since this is <= 0.05 we can reject the null hypothesis. This would mean it is plausible that the league with
+        the highest average dragon control has significantly higher win rate compared to the tier one league. This could mean that teams who prioritize <code>dragons</code> compared to other objectives have a higher chance of winning matches, which would influence how coaches of the game would excecute their strategies.</p>
     </div>
 </div>
