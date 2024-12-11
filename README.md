@@ -482,7 +482,6 @@
         <p>
             Objectives like Barons, Dragons, Heralds, and Elders, and Towers are often indicators of game strategy and control. Predicting a team’s win based on these objectives could provide valuable insights for players, analysts, and coaches. By understanding the relationship between these objectives and victory, teams can refine their gameplay strategies to optimize their chances of winning.
         </p>
-    </div>
     <h3>Results</h3>
         <p>
             The performance of the current model is as follows:
@@ -501,7 +500,6 @@
             </ul>
             Overall, while the model's performance is a good starting point, there is significant room for improvement to better capture the nuances of professional League of Legends matches.
         </p>    
-</div>
 
 <div style="text-align: left;">
     <h1>Final Model</h1>
